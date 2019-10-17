@@ -1,0 +1,64 @@
+public class Fruit {
+	
+	public String name; 
+	public String taste; 
+	public double size; 
+	
+	public String getName() {
+		return name;
+	}
+
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+
+	public String getTaste() {
+		return taste;
+	}
+
+
+
+	public void setTaste(String taste) {
+		this.taste = taste;
+	}
+
+
+
+	public double getSize() {
+		return size;
+	}
+
+
+
+	public void setSize(double size) {
+		this.size = size;
+	}
+ 
+		public  void eat() { 
+			System.out.println(this.name+"tastes"+ this.taste + "and is "+ this.size + "inches");
+	}
+	
+	class Apple extends Fruit { 
+		String name = "Apple"; 
+		String taste  = "Sweet"; 
+		int size = 3;
+	public void eat () {
+		System.out.println(this.name+"tastes"+ this.taste + "and is "+ this.size + "inches");
+	}
+	
+	}
+
+	class  Orange extends Fruit{ 
+		String name = "Orange"; 
+		String taste= "Sour"; 
+		int size =5 ; 
+		public void eat () {
+			System.out.println(this.name+"tastes"+ this.taste + "and is "+ this.size + "inches");
+		}
+	}	
+	
+}
